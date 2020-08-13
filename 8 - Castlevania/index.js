@@ -1,7 +1,7 @@
 countMoviments();
 
 function countMoviments() {
-  const nDisk = 10;
+  const nDisk = 5;
 
   let nMoviments = 0;
 
