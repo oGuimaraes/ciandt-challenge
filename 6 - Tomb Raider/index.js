@@ -9,7 +9,11 @@ for (i = 0; i < letras.length; i++) {
     for (k = 0; k < letras.length; k++) {
       senha += letras[k];
       for (l = 1; l <= 9; l++) {
-        possiveisSenhas.push((senha += l));
+        senha += letras[i];
+        for (m = 1; m <= 9; m++) {
+          possiveisSenhas.push((senha += m));
+          senha = `${letras[i]}${letras[j]}${letras[k]}${l}`;
+        }
         senha = `${letras[i]}${letras[j]}${letras[k]}`;
       }
       senha = `${letras[i]}${letras[j]}`;
