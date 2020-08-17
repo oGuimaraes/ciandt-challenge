@@ -15,8 +15,7 @@ while (actualNumber < anoInauguracaoEstacao) {
     }
   }
   itemsInLine += 2;
-  console.log(`[${line}] -> ${arr}`);
 }
 console.log(
-  `O número ${anoInauguracaoEstacao} foi encontrado na linha ${line}`
+  `O número ${anoInauguracaoEstacao} foi encontrado na linha ${line}.`
 );

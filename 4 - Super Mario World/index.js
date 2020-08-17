@@ -1,5 +1,5 @@
 const variations = ["A", "B", "C"];
-const possibility = [];
+const possibilities = [];
 const sequence = "";
 
 for (i = 0; i < 1; i++) {
@@ -8,12 +8,12 @@ for (i = 0; i < 1; i++) {
     for (k = 0; k < variations.length; k++) {
       sequence += `${variations[k]}`;
       if (k == 0) {
-        possibility.push(sequence);
+        possibilities.push(sequence);
         sequence = `${variations[j]}`;
       } else {
         for (l = 0; l < variations.length - 1; l++) {
           sequence += `${variations[l]}`;
-          possibility.push(sequence);
+          possibilities.push(sequence);
           sequence = `${variations[j]}${variations[k]}`;
         }
         sequence = `${variations[j]}`;
@@ -22,5 +22,5 @@ for (i = 0; i < 1; i++) {
   }
 }
 
-console.log(possibility);
-console.log(possibility.length);
+console.log(possibilities);
+console.log(`${possibilities.length} variações`);

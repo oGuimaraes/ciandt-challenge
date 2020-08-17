@@ -1,8 +1,8 @@
-countMoviments();
+const nDisk = 5;
 
-function countMoviments() {
-  const nDisk = 5;
+countMoviments(5);
 
+function countMoviments(nDisk) {
   let nMoviments = 0;
 
   function moveDisk(n, initalPin, endPin, auxPin) {

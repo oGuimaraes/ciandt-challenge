@@ -1,23 +1,23 @@
-const all = 1000;
-
-/* Yoshi Island */
-const y = 450;
-
-/* Chocolate Island */
-const ch = 330;
-
-/* Cookie Moutain */
-const co = 340;
-
-const yANDch = 200;
-const yANDcoo = 180;
-const chANDco = 100;
-
-const yANDcooANDchoco = 30;
-
-calculate();
+console.log(calculate());
 
 function calculate() {
+  const all = 1000;
+
+  /* Yoshi Island */
+  const y = 450;
+
+  /* Chocolate Island */
+  const ch = 330;
+
+  /* Cookie Moutain */
+  const co = 340;
+
+  const yANDch = 200;
+  const yANDcoo = 180;
+  const chANDco = 100;
+
+  const yANDcooANDchoco = 30;
+
   const A =
     y -
     (yANDch - yANDcooANDchoco) -
@@ -47,7 +47,5 @@ function calculate() {
 
   const likesOneLocation = A + B + C;
   const dontLikeAny = all - D;
-  console.log(
-    `Há ${dontLikeAny} yoshis que não gostam de nenhuma locadlida & ${likesOneLocation} que gostam apenas de uma localidade.`
-  );
+  return `Há ${dontLikeAny} yoshis que não gostam de nenhuma localidade & ${likesOneLocation} que gostam apenas de uma.`;
 }

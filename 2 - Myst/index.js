@@ -2,14 +2,6 @@ const init = 2;
 const finish = 120;
 const primeNumbers = [];
 
-for (i = 2; i <= finish; i++) {
-  if (isPrime(i)) {
-    primeNumbers.push(i);
-  }
-}
-
-console.log(primeNumbers);
-
 function isPrime(n) {
   if (n < 2) return false;
 
@@ -22,3 +14,14 @@ function isPrime(n) {
   }
   return n;
 }
+
+function checkPrimeInterval(init, finish) {
+  for (i = init; i <= finish; i++) {
+    if (isPrime(i)) {
+      primeNumbers.push(i);
+    }
+  }
+  console.log(primeNumbers);
+}
+
+checkPrimeInterval(init, finish);
